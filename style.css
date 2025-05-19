@@ -9,8 +9,9 @@ body,
 html {
     height: 100%;
     margin: 0;
-    background-color: #fafafa;
-    font-family: "Lora", serif;
+    background-color: var(--color-three);
+    font-family: "Scope One", serif;
+    font-optical-sizing: auto;
     scroll-behavior: smooth;
 }
 
@@ -20,10 +21,50 @@ html {
     box-sizing: border-box;
 }
 
+.maingrid {
+    width: 100vw;
+    /* Viewport width */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+
+}
+
+.left-side {
+
+    display: flex;
+    align-items: center;
+    /* vertical centering */
+    justify-content: center;
+    /* horizontal centering */
+    background-color: var(--color-three);
+    /* same color you use */
+}
+
 h1 {
     font-family: "Big Shoulders Stencil", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    color: var(--color-one);
+    display: block;
+    font-size: 125px;
+}
 
+.right-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* ensures image doesn't stretch weirdly */
 }
