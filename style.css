@@ -1,0 +1,29 @@
+:root {
+    --color-one: #FE5D26;
+    --color-two: #F2C078;
+    --color-three: #FAEDCA;
+    --color-four: #C1DBB3;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #fafafa;
+    font-family: "Lora", serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
