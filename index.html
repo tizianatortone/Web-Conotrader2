@@ -29,9 +29,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">CONOTRADER</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,13 +46,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#products"
+                >Productos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -62,14 +64,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Idioma
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Inglés</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
               </ul>
             </li>
           </ul>
@@ -79,6 +78,7 @@
     <div class="container-fluid maingrid">
       <div class="left-side">
         <h1>CONOTRADER</h1>
+        <h2>Conectamos confianza, calidad y resultados</h2>
       </div>
       <div class="right-side">
         <div
@@ -116,9 +116,15 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
+                <h3>
+                  CONECTAMOS ORIGEN Y MERCADO GLOBAL DE MANÍ CONFITERÍA DE
+                  EXCELENCIA
+                </h3>
                 <p>
-                  Some representative placeholder content for the first slide.
+                  Somos una firma especializada en servicios de broker y trading
+                  internacional, focalizada en la comercialización de maní
+                  confitería de alta calidad y facilitando operaciones seguras y
+                  eficientes entre productores y compradores.
                 </p>
               </div>
             </div>
@@ -129,9 +135,14 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h3>
+                  SOLUCIONES INTEGRALES DE TRADING INTERNACIONAL PARA EL SECTOR
+                  MANISERO
+                </h3>
                 <p>
-                  Some representative placeholder content for the second slide.
+                  Nos diferenciamos por nuestra capacidad analítica de mercados,
+                  gestión integral de operaciones y un firme compromiso con la
+                  trazabilidad y calidad del producto.
                 </p>
               </div>
             </div>
@@ -142,10 +153,10 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
+                <h3>
+                  COMPROMETIDOS CON LA EFICIENCIA COMERCIAL Y LA CALIDAD GLOBAL
+                </h3>
+                <p>Presencia Internacional. Alcance global. Enfoque local.</p>
               </div>
             </div>
           </div>
@@ -170,5 +181,141 @@
         </div>
       </div>
     </div>
+    <section class="container-fluid p-0" id="products">
+      <h2 class="titulos">NUESTROS PRODUCTOS</h2>
+      <div class="productsGrid">
+        <div class="card">
+          <img
+            src="/pictures/download (1).jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">MANÍ CRUDO CON PIEL</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/pictures/images (1).jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">MANÍ TOSTADO</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/pictures/images.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">MANÍ BLANQUEADO</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/pictures/download.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">PACKAGING A GRANEL</h5>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          Maní confitería argentino, seleccionado para los mercados más
+          exigentes. Trabajamos con variedades de maní tipo
+          <span id="rv">Runner y Virginia</span>, reconocidas internacionalmente
+          por su <span id="tst">tamaño, sabor y textura</span>, ideales para la
+          industria de snacks, chocolatería y confitería.
+        </p>
+        <p>
+          Cumplimos con normativas internacionales de inocuidad alimentaria
+          (FDA, UE, Codex), asegurando trazabilidad, certificación y logística
+          de exportación confiable.
+        </p>
+      </div>
+    </section>
+    <section class="container-fluid p-0" id="services">
+      <h2 class="titulos">NUESTROS SERVICIOS</h2>
+      <div class="servicesGrid">
+        <div class="service service-1">
+          <h4>BROKER COMERCIAL</h4>
+          <p>
+            intermediación entre productores, exportadores e importadores a
+            nivel global.
+          </p>
+        </div>
+        <div class="service service-2">
+          <h4>TRADING DIRECTO</h4>
+          <p>
+            Operaciones propias con gestión integral de compra, venta y
+            logística internacional
+          </p>
+        </div>
+
+        <div class="service service-3">
+          <h4>DESARROLLO DE MERCADOS</h4>
+          <p>Prospección y apertura de nuevos destinos comerciales</p>
+        </div>
+        <div class="service service-4">
+          <h4>CONSULTORÍA EN COMERCIO EXTERIOR</h4>
+          <p>Asesoramiento técnico, documental y normativo</p>
+        </div>
+
+        <div class="service service-5">
+          <h4>SUPERVISIÓN DE CALIDAD Y CUMPLIMIENTO NORMATIVO</h4>
+          <p>En origen y destino</p>
+        </div>
+        <div>
+          HOLA Exportamos regularmente a: • Europa: Alemania, Países Bajos,
+          España, Italia, Francia • América del Norte y del Sur • Medio Oriente
+          y Asia: Emiratos Árabes Unidos, China, India, entre otros Nuestra red
+          de colaboradores y agentes locales nos permite adaptar las estrategias
+          de comercialización a cada mercado, garantizando cercanía operativa y
+          flexibilidad comercial.
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid p-0" id="contacto">
+      <h2 class="titulos">SOBRE NOSOTROS</h2>
+      <p class="description">
+        Con base operativa en Argentina y representación activa en mercados
+        clave, somos un equipo multidisciplinario con amplia experiencia en el
+        comercio exterior agroindustrial. Actuamos como nexo estratégico entre
+        la producción regional y la demanda global, garantizando operaciones
+        estructuradas, transparentes y alineadas a los más altos estándares
+        internacionales
+      </p>
+      <div class="nosotros">
+        <div class="left-diagonal">
+          Por qué elegirnos • Experiencia probada en el sector agroexportador •
+          Solidez operativa y cumplimiento contractual • Gestión logística
+          eficiente y documentación internacional • Relaciones a largo plazo con
+          productores e importadores • Enfoque proactivo en calidad,
+          trazabilidad y sostenibilidad
+        </div>
+        <div class="right-diagonal">
+          Contacto ¿Interesado en trabajar con nosotros? Póngase en contacto con
+          nuestro equipo comercial y obtenga una cotización personalizada o
+          información adicional sobre nuestras operaciones. Email:
+          contacto@tuempresa.com Teléfono: +54 9 351 0000000
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="left-content">
+        <h3>CONOTRADER LLC</h3>
+        <hr />
+        <p>Miami, FL.</p>
+      </div>
+
+      <div class="right-content">
+        <div class="contact-info">
+          <h4>Información de contacto</h4>
+          Oficinas: Córdoba, Argentina | Representación en Europa y América
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:conotrader@gmail.com">conotrader@gmail.com</a>
+          </p>
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:conotrader@gmail.com">conotrader@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
