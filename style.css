@@ -92,12 +92,23 @@ img {
     width: 100%;
     object-fit: cover;
     /* ensures image doesn't stretch weirdly */
-    filter: brightness(93%) saturate(95%);
+
 
 }
 
+.caption-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.carousel-caption h3 {
+    font-size: 22px;
+}
+
 .carousel-caption p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .section {
@@ -150,7 +161,7 @@ img {
 }
 
 
-.description {
+#products .description {
     padding: 35px;
     font-size: 22px;
     text-align: center;
@@ -168,12 +179,14 @@ img {
     background-color: var(--color-three)
 }
 
+
+
 .servicesGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 50px;
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     padding: 15px;
     margin: 20px;
     color: var(--color-one);
@@ -209,64 +222,77 @@ img {
     transform: translateY(160px);
 }
 
+.paises {
+    border: 1px solid var(--color-three);
+    padding: 60px;
+    width: 55%;
+    margin-left: 45px;
+    transform: translateY(45px);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#contacto {
+    background-color: var(--color-three);
+    width: 100%;
+}
+
+#italic {
+
+    padding: 35px;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
 .nosotros {
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-    background: linear-gradient(-45deg,
-            var(--color-one) 50%,
-            /* left side */
-            var(--color-two) 50%
-            /* right side */
-        );
+    padding: 80px;
+    border-top: 1px solid var(--color-two);
 
 }
 
 .left-diagonal {
-    width: 45%;
-    margin-top: 0;
-    /* stays at top */
+    width: 50%;
+
+    border-right: 1px solid var(--color-two);
 
 }
 
+li {
+    list-style: none;
+    font-size: 18px;
+}
 
+li i {
+    color: var(--color-four);
+}
 
 .right-diagonal {
-    width: 45%;
-
-    transform: translateY(160px);
-}
-
-
-
-.contact-info {
+    width: 50%;
     text-align: end;
-    margin-left: 50%;
+
 }
 
-.contact-info h4 {
-    margin-bottom: 15px;
+.right-diagonal p {
+    font-size: 18px;
 }
 
-.contact-info p {
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--color-one);
-}
-
-.contact-info a {
-    color: var(--color-one);
+.right-diagonal a,
+i {
     text-decoration: none;
-    font-size: 20px;
+    color: var(--color-one);
+    font-size: 22px;
 }
 
 footer {
     background-color: var(--color-four);
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 15px;
 
 }
