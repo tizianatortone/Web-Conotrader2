@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Conotrader2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,18 +31,6 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">CONOTRADER</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -51,10 +39,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#services">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -190,7 +178,7 @@
     </div>
     <section class="container-fluid p-0" id="products">
       <h2 class="titulos">NUESTROS PRODUCTOS</h2>
-      <div class="productsGrid">
+      <div class="productsFlex">
         <div class="card">
           <img
             src="/pictures/download (1).jpeg"
@@ -233,6 +221,44 @@
           (FDA, UE, Codex), asegurando trazabilidad, certificación y logística
           de exportación confiable.
         </p>
+        <div>
+          <h5>
+            <a
+              class="btn"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              VER MÁS
+            </a>
+          </h5>
+          <div class="collapse" id="collapseExample">
+            <div class="fade-in">
+              <h5>Exportamos regularmente a:</h5>
+              <ul>
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i>EUROPA: Alemania, Países
+                  Bajos, España, Italia, Francia
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i>América del NORTE y del SUR
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i>MEDIO ORIENTE Y ASIA:
+                  Emiratos Árabes Unidos, China, India, entre otros
+                </li>
+              </ul>
+
+              <p>
+                Nuestra red de colaboradores y agentes locales nos permite
+                adaptar las estrategias de comercialización a cada mercado,
+                garantizando cercanía operativa y flexibilidad comercial.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="container-fluid p-0" id="services">
@@ -266,22 +292,6 @@
           <h4>SUPERVISIÓN DE CALIDAD Y CUMPLIMIENTO NORMATIVO</h4>
           <p>En origen y destino</p>
         </div>
-      </div>
-      <div class="paises">
-        <h5>Exportamos regularmente a:</h5>
-        <p>EUROPA: Alemania, Países Bajos, España, Italia, Francia</p>
-        <p>AMÉRICA DEL NORTE Y AMÉRICA DEL SUR</p>
-
-        <p>
-          ASIA Y MEDIO ORIENTE: Emiratos Árabes Unidos, China, India, entre
-          otros
-        </p>
-
-        <p>
-          Nuestra red de colaboradores y agentes locales nos permite adaptar las
-          estrategias de comercialización a cada mercado, garantizando cercanía
-          operativa y flexibilidad comercial.
-        </p>
       </div>
     </section>
     <section class="container-fluid p-0" id="contacto">
@@ -335,23 +345,22 @@
             <i class="bi bi-telephone-fill"></i>
             <a href="mailto:conotrader@gmail.com">+54 9 351 0000000</a>
           </p>
-          <p>
-            <i class="bi bi-whatsapp"></i>
-            <a href="mailto:conotrader@gmail.com">+54 9 351 0000000</a>
-          </p>
+          <a
+            href="https://wa.me/+5493513913762"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-whatsapp whatsapp-icon"></i>
+          </a>
         </div>
       </div>
     </section>
     <footer>
-      <div>
-        <h5>CONOTRADER LLC</h5>
-        <hr />
-      </div>
+      <h5>CONOTRADER LLC</h5>
+      <hr />
 
-      <div>
-        <p>Oficinas: Córdoba, Argentina | Representación en Europa y América</p>
-        <hr />
-      </div>
+      <p>Oficinas: Córdoba, Argentina | Representación en Europa y América</p>
     </footer>
   </body>
 </html>

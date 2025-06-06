@@ -105,10 +105,12 @@ img {
 
 .carousel-caption h3 {
     font-size: 22px;
+    color: var(--color-two);
 }
 
 .carousel-caption p {
     font-size: 18px;
+    color: var(--color-three);
 }
 
 .section {
@@ -127,7 +129,7 @@ img {
 .titulos {
 
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20%;
     color: var(--color-two);
     padding: 25px;
 
@@ -135,10 +137,9 @@ img {
 
 
 
-.productsGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
+.productsFlex {
+    display: flex;
+    justify-content: space-evenly;
     padding: 45px;
 }
 
@@ -179,7 +180,19 @@ img {
     background-color: var(--color-three)
 }
 
+.btn {
+    border: 1px solid var(--color-four);
+    padding: 5px 10px;
+    color: var(--color-one);
+    border-radius: 0;
+    background-color: var(--color-four);
+    transition: all 300ms ease-in-out;
+}
 
+.btn:hover {
+    background-color: var(--color-two);
+    color: var(--color-one);
+}
 
 .servicesGrid {
     display: grid;
@@ -190,6 +203,7 @@ img {
     padding: 15px;
     margin: 20px;
     color: var(--color-one);
+    margin-bottom: 25%;
 
 
 }
@@ -202,7 +216,6 @@ img {
 
 .service-1 {
     transform: translateY(0px);
-
 
 }
 
@@ -222,12 +235,11 @@ img {
     transform: translateY(160px);
 }
 
-.paises {
+.fade-in {
+    display: block;
     border: 1px solid var(--color-three);
-    padding: 60px;
-    width: 55%;
-    margin-left: 45px;
-    transform: translateY(45px);
+    padding: 30px;
+    width: 100%;
     border-radius: 25px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -288,11 +300,20 @@ i {
     font-size: 22px;
 }
 
+
+
 footer {
     background-color: var(--color-four);
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: block;
     padding: 50px 15px;
+    text-align: center;
 
+}
+
+footer h5 {
+    font-family: "Big Shoulders Stencil",
+        sans-serif;
+    font-size: 32px;
+    color: var(--color-one);
 }
